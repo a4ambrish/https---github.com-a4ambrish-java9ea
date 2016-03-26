@@ -1,0 +1,29 @@
+In this project
+fincal module is dependent on the calculator module.
+1. calculator module exports.
+2. fincal module requires calculator module 
+
+see module-info.java of each project.
+
+
+When we try to complie fincal it will failed, because it it not declared it required dependency in module-info.java file.
+
+javac -modulepath mods -d mods\com.ambrish.jha.app.fincal  src\com.ambrish.jha.app.fincal\
+src\com.ambrish.jha.app.fincal\com\ambrish\jha\app\fincal\Main.java:3: error: package com.ambrish.jha.app.calculator does not exist
+import com.ambrish.jha.app.calculator.Calculator;
+                                     ^
+src\com.ambrish.jha.app.fincal\com\ambrish\jha\app\fincal\Main.java:4: error: package com.ambrish.jha.app.calculator does not exist
+import com.ambrish.jha.app.calculator.CalculatorService;
+                                     ^
+src\com.ambrish.jha.app.fincal\com\ambrish\jha\app\fincal\Main.java:11: error: cannot find symbol
+                Calculator cal = CalculatorService.getInstance();
+                ^
+  symbol:   class Calculator
+  location: class Main
+src\com.ambrish.jha.app.fincal\com\ambrish\jha\app\fincal\Main.java:11: error: cannot find symbol
+                Calculator cal = CalculatorService.getInstance();
+                                 ^
+  symbol:   variable CalculatorService
+  location: class Main
+4 errors
+
