@@ -1,0 +1,8 @@
+In this project
+fincal module is dependent on the calculator module.
+1. calculator module exports.
+2. fincal module requires calculator module 
+
+see module-info.java of each project.
+
+

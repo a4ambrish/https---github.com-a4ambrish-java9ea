@@ -1,0 +1,1 @@
+jar --create --file=mlib/fincal.jar --module-version=1.0 --main-class=com.ambrish.jha.app.fincal.Main -C mods\com.ambrish.jha.app.fincal .
